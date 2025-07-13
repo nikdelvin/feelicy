@@ -10,7 +10,7 @@ import solidJs from '@astrojs/solid-js'
 export default defineConfig({
     integrations: [
         starlight({
-            title: 'My Docs',
+            title: 'Feelicy',
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nikdelvin/feelicy' }],
             sidebar: [
                 {
