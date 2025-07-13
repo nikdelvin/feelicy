@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "scripts": {
         "start": "npm run prettier && npm run eslint && astro dev",
-        "build": "astro build",
+        "build": "NODE_ENV=production astro build",
         "preview": "astro preview",
         "eslint": "eslint --ext .ts,.tsx,.astro src",
         "prettier": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-tailwindcss",
