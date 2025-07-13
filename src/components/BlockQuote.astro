@@ -1,0 +1,96 @@
+---
+export interface Props {
+    text: string
+}
+
+const { text } = Astro.props
+---
+
+<section id="block_content">
+    <div class="col-md-6 container">
+        <blockquote class="blockstyle"><span class="triangle"></span>{text}</blockquote>
+    </div>
+</section>
+<style>
+    @font-face {
+        font-family: 'FontAwesome';
+        src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
+        src:
+            url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.0.3')
+                format('embedded-opentype'),
+            url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.0.3')
+                format('woff'),
+            url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.0.3')
+                format('truetype'),
+            url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular')
+                format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding: 1rem 1rem 1rem 2rem;
+        border-left: none;
+        position: relative;
+    }
+
+    section#block_content {
+        text-align: left;
+    }
+
+    blockquote p {
+        font-size: 1rem;
+    }
+
+    blockquote:before,
+    blockquote:after {
+        font-family: Arial, serif;
+        font-size: 2.5rem;
+        vertical-align: middle;
+        line-height: 0;
+    }
+
+    blockquote:before {
+        content: open-quote;
+        margin-right: 4px;
+    }
+
+    blockquote:after {
+        content: close-quote;
+    }
+
+    blockquote.blockstyle,
+    blockquote.style2 {
+        color: #ace9c3;
+        font-style: italic;
+    }
+
+    blockquote.blockstyle p,
+    blockquote.style2 p {
+        display: inline;
+    }
+
+    blockquote.blockstyle {
+        border-left: 4px solid #22c55e;
+        position: relative;
+    }
+
+    blockquote.blockstyle > span.triangle:before {
+        text-indent: 0;
+        content: '\f0da';
+        font-family: FontAwesome;
+        color: #22c55e;
+        position: absolute;
+        left: -1px;
+        top: 50%;
+        margin-top: -16px;
+        font-style: normal;
+    }
+
+    blockquote.blockstyle:before,
+    blockquote.blockstyle:after {
+        color: #22c55e;
+    }
+</style>
