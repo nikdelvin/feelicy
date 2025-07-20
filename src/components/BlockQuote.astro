@@ -1,14 +1,17 @@
 ---
 export interface Props {
     text: string
+    customClass?: string
 }
 
-const { text } = Astro.props
+const { text, customClass } = Astro.props
 ---
 
 <section id="block_content">
     <div class="col-md-6 container">
-        <blockquote class="blockstyle"><span class="triangle"></span>{text}</blockquote>
+        <blockquote class={`blockstyle whitespace-pre-line ${customClass ?? ''}`}>
+            <span class="triangle"></span>{text}
+        </blockquote>
     </div>
 </section>
 <style>

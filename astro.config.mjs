@@ -14,6 +14,10 @@ export default defineConfig({
             social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/nikdelvin/feelicy' }],
             sidebar: [
                 {
+                    label: 'Mindful Garden',
+                    link: '/mindful-garden'
+                },
+                {
                     label: 'Podcasts',
                     autogenerate: { directory: 'podcasts' }
                 }

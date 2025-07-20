@@ -1,9 +1,10 @@
 ---
 export interface Props {
     audioSrc: string
+    customClass?: string
 }
 
-const { audioSrc } = Astro.props
+const { audioSrc, customClass } = Astro.props
 ---
 
 <svg class="hidden">
@@ -84,6 +85,7 @@ const { audioSrc } = Astro.props
     </symbol>
 </svg>
 <media-controller
+    class={customClass}
     audio
     style="--media-background-color: transparent; --media-control-background: transparent; --media-control-hover-background: transparent; width: 100%; display: inline-block;"
 >

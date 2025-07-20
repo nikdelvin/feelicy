@@ -6,6 +6,14 @@ description: Tired of self-doubt? Learn a 4-step, compassionate method to tame y
 import MediaPlayer from '../../../components/MediaPlayer.astro'
 import BlockQuote from '../../../components/BlockQuote.astro'
 import Grad from '../../../components/Grad.astro'
+import Game from '../../../components/PixelGame/Game'
+
+<div
+    id="game-div"
+    class="mb-[-2.15em] h-0 w-0"
+>
+    <Game client:only="solid-js" />
+</div>
 
 #### Listen the _Inner Critic_ <Grad>Feelicy Podcast</Grad> Episode
 

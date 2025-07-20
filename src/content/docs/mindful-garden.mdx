@@ -1,0 +1,39 @@
+---
+title: Your Mindful Garden
+description: Garden of thoughts to grow your new goals and make peace inside.
+---
+
+import Game from '../../components/PixelGame/Game'
+import BlockQuote from '../../components/BlockQuote.astro'
+import MediaPlayer from '../../components/MediaPlayer.astro'
+import { LinkButton } from '@astrojs/starlight/components'
+
+<div
+    id="game-div"
+    data-hide-sidebar
+    class="container mx-auto w-full"
+>
+    <Game client:only="solid-js" />
+</div>
+
+<div class="flex w-full flex-row gap-8">
+    <BlockQuote
+        customClass="!p-0 !ps-[2rem]"
+        text="Your mind is a beautiful garden.
+    It's time to start planting."
+    />
+    <div class="mt-0 w-auto grow">
+        <MediaPlayer
+            customClass="!mt-0"
+            audioSrc="/Meditation.mp3"
+        />
+    </div>
+    <LinkButton
+        class="!mx-0 my-auto w-auto"
+        href="/podcasts/ep1-puer-aeternus"
+        icon="right-arrow"
+        iconPlacement="end"
+    >
+        Grow new habit
+    </LinkButton>
+</div>

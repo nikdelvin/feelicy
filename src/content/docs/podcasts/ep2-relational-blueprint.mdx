@@ -6,13 +6,22 @@ description: Why You Love the Way You Do.
 import MediaPlayer from '../../../components/MediaPlayer.astro'
 import BlockQuote from '../../../components/BlockQuote.astro'
 import Grad from '../../../components/Grad.astro'
+import Game from '../../../components/PixelGame/Game'
+
+<div
+    id="game-div"
+    class="mb-[-2.15em] h-0 w-0"
+>
+    <Game client:only="solid-js" />
+</div>
 
 #### Listen the _Relational Blueprint_ <Grad>Feelicy Podcast</Grad> Episode
 
 <MediaPlayer audioSrc="/Podcast2.mp3" />
 <sub>
     <sup>
-        Our apologies for this episode's overall quality. We know it wasn't an ideal experience, and we will ensure it doesn't happen again.
+        Our apologies for this episode's overall quality. We know it wasn't an ideal experience, and we will ensure it
+        doesn't happen again.
     </sup>
 </sub>
 
@@ -31,7 +40,8 @@ import Grad from '../../../components/Grad.astro'
 ></iframe>
 <sub>
     <sup>
-        Our apologies for this episode's overall quality. We know it wasn't an ideal experience, and we will ensure it doesn't happen again.
+        Our apologies for this episode's overall quality. We know it wasn't an ideal experience, and we will ensure it
+        doesn't happen again.
     </sup>
 </sub>
 

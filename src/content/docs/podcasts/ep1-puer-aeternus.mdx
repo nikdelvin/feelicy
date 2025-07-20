@@ -6,6 +6,14 @@ description: The Struggle with Paradise in vision of Marie-Louise von Franz's.
 import MediaPlayer from '../../../components/MediaPlayer.astro'
 import BlockQuote from '../../../components/BlockQuote.astro'
 import Grad from '../../../components/Grad.astro'
+import Game from '../../../components/PixelGame/Game'
+
+<div
+    id="game-div"
+    class="mb-[-2.15em] h-0 w-0"
+>
+    <Game client:only="solid-js" />
+</div>
 
 #### Listen the _Puer Aeternus_ <Grad>Feelicy Podcast</Grad> Episode
 
