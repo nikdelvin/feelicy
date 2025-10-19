@@ -1,54 +1,192 @@
-# Starlight Starter Kit: Basics
+# 🌳 Feelicy
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+> Create beautiful forest of thoughts, plans, and habits inside the best platform for self-improvement
 
+Meditation, focus, mind mapping, and goal planning in game format of Garden Simulator.
+
+[![Live Website](https://img.shields.io/badge/🌐_Live-feelicy.by.nikdelv.in-success)](https://feelicy.by.nikdelv.in)
+[![App](https://img.shields.io/badge/🚀_App-feelicy.app.nikdelv.in-primary)](https://feelicy.app.nikdelv.in)
+[![GitHub](https://img.shields.io/badge/GitHub-nikdelvin/feelicy-blue)](https://github.com/nikdelvin/feelicy)
+
+## 🌟 Overview
+
+Feelicy is an innovative self-improvement platform that combines:
+
+- 🧠 **Mind mapping** platform for organizing thoughts
+- 🎯 **Goal planning** dashboard for tracking progress
+- 🧘 **Meditation** with guided sessions and relaxing music
+- 🌱 **Habit tracking** in a beautiful garden simulator format
+
+## ✨ Features
+
+### Garden of Thoughts - To Grow
+
+Create space for your goals and find inner peace:
+
+- **Breathing Techniques**: Scientifically approved collection to help you concentrate during work
+- **Meditation Library**: Rich playlist of meditation lessons recorded by professional voice actors
+- **Relaxation Sounds**: Nature sounds and binaural beats for deep & better sleep
+- **Training Programs**: Body relaxation, contrast showering, yoga, sadhu board & stretching
+
+### Forest of Habits - To Build
+
+Build an unbreakable shell of mindfulness and control:
+
+- **Daily Tasks**: Connect strong habits, gain self-control, and reach life-mindfulness
+- **Garden Simulator**: Make yourself better in game format - water habits, goals, and thoughts like trees
+- **Quit Addictions**: Use habit reversal training (HRT) or cognitive-behavioral therapy (CBT)
+
+## 🗺️ Project Roadmap
+
+### Phase I: Breathwork Exercises Library (Current)
+
+Playlist of breathing & meditation sessions including:
+
+- Wim Hof, Holotropic, Sitali Pranayama breathing techniques
+- 100+ meditation lessons by certified psychologists
+- AI-generated endless relaxing tracks with nature sounds and binaural rhythms
+
+### Phase II: Physical Exercises Library (Coming Soon)
+
+Yoga, stretching & willpower boost lessons:
+
+- Relaxing yoga sequences with full list of asanas and pranayamas
+- Sadhu standing board sessions for physical & emotional energy
+- Full-body functional exercises and workout programs
+
+### Phase III: Improvements Scheduler
+
+Life journal, goals planner & habits tracker:
+
+- Personal diary and daily mood tracker with reminders
+- Mind mapping interface for goal planning and self-analysis
+- Addictions tracker based on HRT and CBT
+
+### Phase IV: Virtual Personal Garden
+
+Any thought is a tree, any idea is a flower:
+
+- Garden Simulator format for habits, goals, and mood tracking
+- Get rid of anxiety/depression signs with focused meditation
+- Water your trees with regular exercises using gamification mechanics
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Astro](https://astro.build) - Modern static site generator
+- **Styling**: [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+- **UI Library**: [TailyUI](https://tailyui.by.nikdelv.in) - Pure Tailwind CSS UI components
+- **Language**: TypeScript - Type-safe JavaScript
+- **Deployment**: Firebase Hosting
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (latest LTS version recommended)
+- npm or yarn package manager
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/nikdelvin/feelicy.git
+cd feelicy
+
+# Install dependencies
+npm install
 ```
-npm create astro@latest -- --template starlight
+
+### Development
+
+```bash
+# Start development server with linting and formatting
+npm run start
+
+# Or just run Astro dev server
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/starlight/tree/main/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/starlight/tree/main/examples/basics)
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/withastro/starlight&create_from_path=examples/basics)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fwithastro%2Fstarlight%2Ftree%2Fmain%2Fexamples%2Fbasics&project-name=my-starlight-docs&repository-name=my-starlight-docs)
+The site will be available at `http://localhost:4321`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Build
 
-## 🚀 Project Structure
+```bash
+# Build for production (includes linting and type checking)
+npm run build
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
-
+# Preview production build
+npm run preview
 ```
-.
-├── public/
+
+## 📁 Project Structure
+
+```text
+feelicy/
+├── public/                     # Static assets (favicons, media files, audio)
+│   └── media/                  # Game assets and UI images
+│       └── Farm/               # Farm game animations and sprites
 ├── src/
-│   ├── assets/
-│   ├── content/
-│   │   ├── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
+│   ├── assets/                 # Optimized image assets
+│   ├── components/             # Reusable Astro & React components
+│   │   ├── BlockQuote.astro
+│   │   ├── Grad.astro
+│   │   ├── MediaPlayer.astro
+│   │   └── PixelGame/          # Game component with animations
+│   │       ├── Game.tsx
+│   │       ├── levels.ts
+│   │       ├── utils.ts
+│   │       └── style.css
+│   ├── content/                # Markdown content collections
+│   │   └── docs/
+│   │       ├── index.mdx
+│   │       ├── mindful-garden.mdx
+│   │       └── podcasts/       # Podcast episode content
+│   ├── styles/                 # Global CSS
+│   │   └── global.css
+│   └── content.config.ts       # Content configuration
+├── astro.config.mjs            # Astro configuration
+├── tailwind.config.ts          # Tailwind CSS configuration
+├── tsconfig.json               # TypeScript configuration
+├── eslint.config.mjs           # ESLint configuration
+├── prettier.config.mjs         # Prettier configuration
+├── firebase.json               # Firebase deployment config
+└── package.json                # Dependencies and scripts
 ```
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+## 📜 Available Scripts
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+| Command            | Description                                            |
+| ------------------ | ------------------------------------------------------ |
+| `npm run start`    | Formats, lints, and starts dev server                  |
+| `npm run build`    | Formats, lints, type-checks, and builds for production |
+| `npm run preview`  | Preview production build locally                       |
+| `npm run eslint`   | Run ESLint on TypeScript and Astro files               |
+| `npm run prettier` | Format all files with Prettier                         |
 
-Static assets, like favicons, can be placed in the `public/` directory.
+## 👨‍💻 Creator
 
-## 🧞 Commands
+Created by [Nikita Stadnik](https://nikdelv.in) - Passionate Fullstack Web Developer
 
-All commands are run from the root of the project, from a terminal:
+- 📧 Email: [the@nikdelv.in](mailto:the@nikdelv.in)
+- 🐙 GitHub: [@nikdelvin](https://github.com/nikdelvin)
+- 💼 LinkedIn: [@nikdelvin](https://www.linkedin.com/in/nikdelvin)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 🔗 Related Projects
 
-## 👀 Want to learn more?
+- [TailyUI](https://tailyui.app.nikdelv.in) - Modern UI Library built with pure Tailwind CSS
+- [Brodly](https://brodly.app.nikdelv.in) - High-secure anonymous live-streaming platform
+- [Scientry](https://scientry.app.nikdelv.in) - Data management & visualization tool
+- [Scripty](https://scripty.app.nikdelv.in) - Practice-oriented educational platform to learn JavaScript
+- [Neuroly](https://neuroly.app.nikdelv.in) - STT and voice synthesis AI chatbot
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+## 📄 License
+
+This project is licensed under the terms specified in the [LICENSE](./LICENSE) file.
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/nikdelvin/feelicy/issues).
+
+---
+
+**Plant your first tree today!** 🌱 Visit [feelicy.app.nikdelv.in](https://feelicy.app.nikdelv.in)
